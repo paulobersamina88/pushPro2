@@ -1,17 +1,17 @@
 # MDOF RSA–Pushover Reconciliation PRO
 
-This version keeps the MDOF concept and manual checking:
+Online Streamlit version.
 
-- Input floor weight and storey stiffness from STAAD.
-- Compute modal properties and RSA base shear.
-- Use first-mode pushover force pattern.
-- Input beam/column plastic moment per frame.
-- Indicate number of frames in the analyzed axis.
-- Compute storey yield capacity from column and beam mechanisms.
-- Generate nonlinear MDOF pushover curve using storey spring backbone.
-- Convert pushover to ADRS and compare to response spectrum demand.
+Upload `app.py` and `requirements.txt` to GitHub, then deploy on Streamlit Community Cloud.
 
-## Deploy online
+Main file path: `app.py`
 
-Upload `app.py` and `requirements.txt` to GitHub, then deploy in Streamlit Community Cloud.
-Main file path: `app.py`.
+Features:
+- STAAD floor weight and storey stiffness input
+- Modal RSA
+- First-mode pushover force pattern
+- Beam/column plastic moment per frame
+- Number of frames per axis
+- Storey yield capacity
+- Nonlinear MDOF pushover
+- ADRS capacity spectrum and UBC 97 demand comparison
